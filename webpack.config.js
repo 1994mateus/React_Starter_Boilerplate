@@ -44,6 +44,9 @@ module.exports = {
       parallel: true,
     })],
   },
+  stats: {
+    children: false
+  },
   plugins: [
     new HtmlWebPackPlugin({
       template: './src/index.html',
