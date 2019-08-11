@@ -2,9 +2,15 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-  devtool: 'inline-source-map',
   output: {
     filename: 'index.min.js',
+  },
+  devtool: 'inline-source-map',
+  resolve: {
+    alias: {
+      components: path.resolve('./src/components'),
+      utils: path.resolve('./src/utils'),
+    },
   },
   module: {
     rules: [
