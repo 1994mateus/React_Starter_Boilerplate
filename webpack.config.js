@@ -1,5 +1,7 @@
+const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   output: {
@@ -45,6 +47,9 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html',
+    }),
+    new webpack.DefinePlugin({
+      'process.env.VARIABLE_NAME': JSON.stringify('This is a environment variable'),
     }),
   ],
 };
