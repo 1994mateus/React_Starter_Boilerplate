@@ -50,7 +50,7 @@ module.exports = {
       filename: './index.html',
     }),
     new webpack.DefinePlugin({
-      'process.env.VARIABLE_NAME': JSON.stringify('This is a environment variable for development'),
+      'process.env.VARIABLE_NAME': JSON.stringify('This is a environment variable for staging'),
     }),
   ],
 };

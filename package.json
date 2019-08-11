@@ -5,6 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server --open --hot --mode development",
+    "build:staging": "webpack --mode production --config webpack.config.staging.js",
     "build": "webpack --mode production"
   },
   "keywords": [],
