@@ -2,10 +2,11 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const webpack = require('webpack');
+const packageJs = require('./package.json');
 
 module.exports = {
   output: {
-    filename: 'index.min.js',
+    filename: `${packageJs.name}.min.js`,
   },
   devtool: 'inline-source-map',
   resolve: {

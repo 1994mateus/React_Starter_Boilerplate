@@ -1,7 +1,7 @@
 {
-  "name": "vchat_mobile",
+  "name": "start_boilerplate",
   "version": "1.0.0",
-  "description": "Chat para aplicativo mobile do Vagas",
+  "description": "Boilerplate for react apps",
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server --open --hot --mode development",
