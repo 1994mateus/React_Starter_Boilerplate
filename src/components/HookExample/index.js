@@ -1,10 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-            
-const HookExample = (props) => <p>This is a react's hook example: {props.count}</p>;
+
+const HookExample = (props) => {
+  const { count } = props;
+  return (
+    <p>
+      This is a hook example:
+      {' '}
+      {count}
+    </p>
+  );
+};
 
 HookExample.propTypes = {
-  count: PropTypes.number,
-}
+  count: PropTypes.number.isRequired,
+};
 
 export default HookExample;

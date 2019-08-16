@@ -10,9 +10,9 @@ const App = () => {
     <div className="app">
       <span>{process.env.VARIABLE_NAME}</span>
       <HookExample count={count} />
-      <button style={{ width: '10%' }} onClick={() => setCount(count + 1)}>Adiciona</button>
+      <button type="button" style={{ width: '10%' }} onClick={() => setCount(count + 1)}>Adiciona</button>
     </div>
-  )
+  );
 };
 
 export default App;

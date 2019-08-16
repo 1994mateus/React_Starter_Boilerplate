@@ -7,8 +7,12 @@ const packageJs = require('./package.json');
 module.exports = {
   output: {
     filename: `${packageJs.name}.min.js`,
+    publicPath: '/',
   },
   devtool: 'inline-source-map',
+  devServer: {
+    historyApiFallback: true,
+  },
   resolve: {
     alias: {
       components: path.resolve('./src/components'),
